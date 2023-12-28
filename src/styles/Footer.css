@@ -1,0 +1,169 @@
+/* ===============
+GET IN TOUCH 
+=============== */
+.line {
+    text-align: center !important;
+    margin-top: 22px !important;
+    margin-bottom: 9px !important;
+}
+
+.line a{
+    position: relative;  
+    font-size: 98% !important;
+    transition: .35s ease-in-out;
+    text-decoration: none;
+}
+.line a:hover::before, .line a:hover::after {
+    color: black !important;
+    bottom: -7px;
+    height: 10px;
+    transition: .35s ease-in-out;
+}
+.line a::after {
+    display: block;
+    content: '';
+    height: 12px;
+    transition: .35s ease-in-out;
+    width: 92%;
+    opacity: .2;
+    position: absolute;
+    bottom: 1px;
+    left: 30px;
+}
+@media screen and (max-width: 992px) {
+    .line a::after {
+        left: 24px;
+    }
+}
+.line a::before {
+    -webkit-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+    transition: .35s ease-in-out;
+}
+.line a::after {
+    -webkit-transition:width 0.4s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    transition: .35s ease-in-out;
+}
+/*Blue Line*/
+.blueline a{
+    color: var(--blue) !important;
+    text-transform: uppercase;
+}
+.blueline a::after {
+    background: var(--blue) !important;
+}
+/*Pink Line*/
+.pinkline a{
+    color: var(--pink) !important;
+    text-transform: uppercase;
+}
+.pinkline a::after {
+    background: var(--pink) !important;
+}
+/*Yellow Line*/
+.yellowline a{
+    color: var(--yellow) !important;
+    text-transform: uppercase;
+}
+.yellowline a::after {
+    background: var(--yellow) !important;
+}
+/*Green Line*/
+.greenline a{
+    color: var(--green) !important;
+    text-transform: uppercase;
+}
+.greenline a::after {
+    background: var(--green) !important;
+}
+/*Purple Line*/
+.purpleline a{
+    color: var(--purple) !important;
+    text-transform: uppercase;
+}
+.purpleline a::after {
+    background: var(--purple) !important;
+}
+/*Facebook Blue Line*/
+.facebookblueline a{
+    color: var(--facebookblue) !important;
+    text-transform: uppercase;
+}
+.facebookblueline a::after {
+    background: var(--facebookblue) !important;
+}
+
+
+
+
+/* ===============
+FOOTER 
+=============== */
+.footer {
+    background-color: var(--darkbg);
+    margin-top: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+
+    width: 100% auto;
+}
+.social {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.social a {
+    text-decoration: none;
+}
+.icon {
+    width: 45px;
+}
+.icon:hover {
+    transform: scale(1.3);
+    transition: .5s ease;
+}
+
+/*Mobile Footer*/
+@media screen and (min-width: 375px) {
+    .icon {
+        width: 55px;
+    }
+}
+.name {
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--gray-04)
+}
+@media screen and (min-width: 768px) {
+    .name {
+        font-size: 16px;
+    }
+}
+#blueStar {
+    color: var(--blue);
+}
+#pinkStar {
+    color: var(--pink);
+}
+#yellowStar {
+    color: var(--yellow);
+}
+#facebookBlueStar {
+    color: var(--facebookblue);
+}
+#greenStar {
+    color: var(--green);
+}
+#purpleStar {
+    color: var(--purple);
+}
+
+.love {
+    background: linear-gradient(270deg, #FD7373, #669CFF);
+    -webkit-background-clip: text;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+}
+

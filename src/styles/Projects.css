@@ -1,0 +1,14 @@
+#myProjects {
+
+  margin-top: 45px !important;
+    text-align: center !important;
+    border-bottom: 1px solid var(--gray-01) !important;
+    width: 83%;
+    margin-bottom: 20px !important;
+    line-height: .1em !important;
+    margin-left: 9% !important;
+}
+#myProjects span {
+    background: var(--lightbg);
+    padding: 0 12px !important;
+}

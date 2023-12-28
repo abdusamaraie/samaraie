@@ -1,0 +1,48 @@
+/* Hero */
+
+.Hero h2 {
+    margin-right: auto;
+    border-bottom: 3px solid var(--primary);
+    font-weight: 400;
+  }
+
+
+.lineswipe {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+.lineswipe:hover::after, .lineswipe:hover::before {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: 10px;
+}
+.lineswipe::before {
+    -webkit-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+}
+.lineswipe::after {
+    -webkit-transition:width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+}
+.lineswipe::after, .lineswipe::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    right: 0;
+    height: 10px;
+    bottom: 10px;
+    z-index: -1;
+}
+.facebooklineswipe {
+    color: var(--facebookblue)
+}
+.facebooklineswipe::before {
+    background: rgba(23, 120, 242, .25); /*Facebook Blue color w/ .25 opacity*/  
+}
+.alcaptain{
+    color: var(--alcaptain-color)
+}
+.alcaptain::before{
+    background: rgba(23, 120, 242, .25); 
+}
