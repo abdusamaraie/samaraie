@@ -1,11 +1,61 @@
 /* Hero */
+.Hero{
+   display: flex ;
+   flex: 1;
+    justify-content: center;
+    flex-direction: column;
+  padding: 40px;  
+margin-bottom: 40px;
+   background-image: url('../assets/images/hero_bg.png');
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   min-height: 600px;
+   position: relative;
+   
 
+}
+
+.Hero .hero_title{
+    text-align: center;
+    z-index: 99;
+}
 .Hero h2 {
-    margin-right: auto;
+    margin:0 auto;
     border-bottom: 3px solid var(--primary);
     font-weight: 400;
+    text-align: center;
+    font-size: 2em;
   }
 
+
+  @media (min-width: 768px) {
+    .Hero {
+      padding: 100px;
+      margin-bottom: 80px;
+      height: 60vh;
+    }
+    .Hero h1{
+        font-size: 4em;
+     
+    }
+    .Hero h2{
+        font-size: 2.5em;
+     
+    }
+  }
+  @media (min-width: 1300px) {
+    .Hero {
+      padding: 100px;
+      margin-bottom: 80px;
+    
+    }
+    .Hero h2{
+        font-size: 3em;
+        width: 60%;
+     
+    }
+  }
 
 .lineswipe {
     text-decoration: none;
@@ -20,10 +70,14 @@
     bottom: 10px;
 }
 .lineswipe::before {
+    transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
     -webkit-transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+    
 }
 .lineswipe::after {
+    transition:width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
     -webkit-transition:width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+
 }
 .lineswipe::after, .lineswipe::before {
     content: "";
@@ -34,11 +88,11 @@
     bottom: 10px;
     z-index: -1;
 }
-.facebooklineswipe {
+.buffalolineswipe {
     color: var(--facebookblue)
 }
-.facebooklineswipe::before {
-    background: rgba(23, 120, 242, .25); /*Facebook Blue color w/ .25 opacity*/  
+.buffalolineswipe::before {
+    background: rgba(23, 120, 242, .25); 
 }
 .alcaptain{
     color: var(--alcaptain-color)

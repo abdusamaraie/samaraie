@@ -1,0 +1,151 @@
+.about-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container .p{
+    font-size: var(--size-2);
+    line-height: 1.5;
+    color: var(--gray-03);
+    margin-bottom: 1rem;
+}
+
+.intro-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+        grid-template-rows: reapeat(auto-fit, minmax(400px, 4fr));
+   
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.grid-content{
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    
+}
+.grid-image{
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 100%;
+    
+    
+}
+.grid-image img{
+
+    object-fit: cover;
+    border-radius: 0 5px 5px 0;
+    
+}
+.skills{
+width: 100%;
+}
+.skills-label{
+    font-size: var(--size-1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--darkblue);
+}
+.skills-languages, .skills-frameworks, .skills-tools{
+    padding: 0;
+    list-style: none;
+}
+.skills ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    list-style-type: '👍' ;
+    padding-left: 1em;
+
+}
+.skills li{
+    font-size: var(--size-2);
+
+
+}
+.skills li::before{
+    content: '';
+    padding-right: 0.5em;
+    font-size: var(--size-2);
+    color: var(--darkblue);
+}
+.skills-info{
+    font-size: var(--size-2);
+}
+
+.skills-container{
+    display: flex;
+ flex-wrap: wrap;
+ gap: 4rem;
+}
+.skills-container div{
+    flex: 1;
+    min-width: 250px;
+}
+.more .more-container{
+ margin-top: 40px;
+ margin-bottom: 40px;
+}
+
+.figma{
+    background: linear-gradient(270deg, #FD7373, var(--green), var(--blue),var(--purple), var(--pink));
+    -webkit-background-clip: text;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+
+}
+.vscode{
+    color: var(--blue);
+}ß
+.email{
+    font-size: var(--size-2);
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+@media (min-width: 666px) {
+    .intro-grid{
+    
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .grid-content{
+        border-radius: 5px 0 0 5px;
+    }
+    .grid-image{
+        border-radius: 0 5px 5px 0;
+       }   
+
+    .about-container{
+        width: 85%;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+      
+}
+ 
+   @media (min-width: 768px) {
+    .about-container{
+        width: 80%;
+    margin: 0 auto;
+    }
+   }
+   @media (min-width: 1300px) {
+    .about-container{
+        width: 60%;
+    margin: 0 auto;
+    }
+   }
+
+
+
