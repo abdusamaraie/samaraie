@@ -1,11 +1,11 @@
 import React from "react";
 
-function ProjectCard({ projectImage, projectName, projectLink }) {
+function ProjectCard({ projectImage, projectName, projectLink, overlyStyle }) {
   return (
     <div className="project-card">
       <img src={projectImage} alt={projectName} />
 
-      <a className="overlay facebook-watch-overlay" href={projectLink}>
+      <a className={`overlay ${overlyStyle}`} href={projectLink}>
         <h3>{projectName}</h3>
       </a>
     </div>

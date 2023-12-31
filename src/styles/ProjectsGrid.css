@@ -43,29 +43,21 @@
     transition: .5s ease-in-out;
     border-radius: 10px;
 }
-.eater-overlay {
-    background-color: rgba(198, 103, 109, 0.65); /*Eater background img color w/ .65 opacity*/
-}
 
-.facebook-watch-overlay {
+
+.alcaptain-overlay {
     background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
 }
 
-.explornell-overlay {
-    background-color: rgba(148, 110, 221, 0.65); /*Explornell background img color w/ .65 opacity*/
-}
-.instagram-overlay {
+
+.instacart-overlay {
     background-color: rgba(218, 159, 93, 0.75); /*Instagram background img color w/ .65 opacity*/
 }
-.uplift-overlay {
-    background-color: rgba(213, 201, 83, 0.65); /*Uplift background img color w/ .65 opacity*/
+
+.cacher-overlay {
+    background-color: rgba(52, 174, 227, 0.7); /*CU Reviews background img color w/ .65 opacity*/
 }
-.cureviews-overlay {
-    background-color: rgba(77, 143, 219, 0.70); /*CU Reviews background img color w/ .65 opacity*/
-}
-.dailyui-overlay {
-    background-color: rgba(120, 172, 74, 0.65); /*Daily UI background img color w/ .65 opacity*/
-}
+
 .overlay h3 {
     color: white;
     position: absolute;

@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/Projects.css";
+import "../styles/ProjectsGrid.css";
 import ProjectCard from "./ProjectCard";
 import { useContext } from "react";
 import { ProjectContext } from "../contexts/ProjectContext";
 
-const Projects = () => {
+const ProjectsGrid = () => {
   const { projects } = useContext(ProjectContext);
   return (
     <div className="projects">
@@ -20,6 +20,7 @@ const Projects = () => {
             projectName={project.name}
             projectImage={project.image}
             projectLink={project.link}
+            overlyStyle={project.overlyStyle}
             key={project.id}
           ></ProjectCard>
         ))}
@@ -28,4 +29,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsGrid;

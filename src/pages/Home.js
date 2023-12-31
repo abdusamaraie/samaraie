@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Projects } from "../components";
+import { Hero, ProjectsGrid } from "../components";
 
 const Title = () => {
   return <h1 className="hero_title">Hi, I’m Abdu! 👋</h1>;
@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <div>
       <Hero Title={Title} Subtitle={Subtitle} />
-      <Projects />
+      <ProjectsGrid />
     </div>
   );
 };
