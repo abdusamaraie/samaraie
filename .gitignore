@@ -24,4 +24,7 @@ yarn-error.log*
 
 
 # add .firebase folder and .firebaserc file and .env file
-.firebase .firebaserc .env firebase.json
+/.firebase 
+.firebaserc 
+.env 
+firebase.json
