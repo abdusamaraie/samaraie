@@ -6,9 +6,9 @@ const About = () => {
     <div className="about-container">
       <h1 className="h1">Hey! I am Abdu 👋</h1>
       <p className="p">
-        A self-taught UI/UX designer with a deep passion for data visualization.
-        Professionally, I'm a seasoned Data Analyst, reveling in the world of
-        problem-solving, especially if it involves coding.
+        " A self-taught UI/UX designer with a deep passion for data
+        visualization. Professionally, I'm a seasoned Data Analyst, reveling in
+        the world of problem-solving, especially if it involves coding.＂
       </p>
 
       {/* <! -- intro section --> */}
@@ -54,7 +54,7 @@ const About = () => {
             new opportunities. Let's connect! Feel free to drop me a message to
             initiate a conversation about the exciting intersections of design,
             data, and innovation at{" "}
-            <a class="blue link" href="mailto:abdu@samaraie.com">
+            <a className="blue link" href="mailto:abdu@samaraie.com">
               <strong className="email">abdu@samaraie.com</strong>
             </a>
           </p>

@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Footer.css";
 
-const x = require("../assets/X → twitter.png.png");
-const linkedin = require("../assets/LinkedIn → linkedin.png.png");
-const instagram = require("../assets/InstaLink → instagramlogo.png.png");
+const x = require("../assets/icons/X → twitter.png.png");
+const linkedin = require("../assets/icons/LinkedIn → linkedin.png.png");
+const instagram = require("../assets/icons/InstaLink → instagramlogo.png.png");
 
 const Footer = () => {
   return (

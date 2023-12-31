@@ -9,11 +9,12 @@
 }
 
 .about-container .p{
-    font-size: var(--size-2);
+    font-size: var(--size-3);
     line-height: 1.5;
-    color: var(--gray-03);
+    color: var(--black);
     margin-bottom: 1rem;
 }
+
 
 .intro-grid{
     display: grid;
@@ -31,6 +32,12 @@
     border-radius: 5px 5px 0 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     
+}
+.grid-content p{
+    font-size: var(--size-2);
+    line-height: 1.5;
+    color: var(--gray-03);
+    margin-bottom: 1rem;
 }
 .grid-image{
     background-color: #fff;

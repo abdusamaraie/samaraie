@@ -1,13 +1,15 @@
 import "./styles/App.css";
 import { RootLayout } from "./layouts";
-import { About, Home, Project, Resume } from "./pages";
-// create react navigation mechanism using react-router-dom
+import { About, Home, Project } from "./pages";
+import React from "react"; // create react navigation mechanism using react-router-dom
 import {
   createBrowserRouter,
   Route,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+
+const LazyResume = React.lazy(() => import("./pages/Resume"));
 
 // Create browser router  navigation
 const router = createBrowserRouter(
@@ -19,7 +21,14 @@ const router = createBrowserRouter(
         <Route path=":projectId" element={<Project />} />
       </Route>
       <Route path="/about" element={<About />} />
-      <Route path="/resume" element={<Resume />} />
+      <Route
+        path="/resume"
+        element={
+          <React.Suspense fallback="Loading Resume">
+            <LazyResume />
+          </React.Suspense>
+        }
+      />
     </Route>
   )
 );

@@ -1,0 +1,38 @@
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.resume{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.resume-container a{
+    text-decoration: none;
+    color: var(--darkbg);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+.resume-container a:hover{
+    text-decoration: none;
+    color: var(--gray-1);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+
+}
+
+@media screen and (min-width: 768px){
+    .resume{
+        width: 50%;
+    }
+}

@@ -20,8 +20,8 @@ const Project = () => {
           <div class="flexText">
             <h5 class="blue">Vision</h5>
             <p>
-              Our vision is to provide the best college chatting and
-              communication resource for the Buffalo community.
+              Our vision is to provide the best peer-to-peer chatting experience
+              for the Buffalo students.
             </p>
             <h5 class="blue">Team</h5>
             <p>2 Engineers, 2 Designers, 1 Product Lead</p>

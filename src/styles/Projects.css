@@ -17,12 +17,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 5px;
+}
+.project-card{
+    margin: 0 auto;
 }
 .project-card img {
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     display: block;
-    margin: 0 auto;
+    margin:0;
 }
 .project-card {
     position: relative;
@@ -34,7 +38,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    width: 90%;
+    width: 100%;
     opacity: 0;
     transition: .5s ease-in-out;
     border-radius: 10px;
