@@ -32,7 +32,7 @@ Header
 header {
   margin: 0;
   text-decoration: none;
-  background-color: var(--color-black);
+  background-color: var(--extradarkbg);
 }
 /* ===============
 NAVIGATION 
@@ -62,8 +62,8 @@ a {
   text-align: center;
   display: block;
   text-decoration: none;
-  color: var(--lightbg);
-  font-family: "SF-Display";
+  color: var(--darkClr);
+  font-family: var(--font-sf-pro-display);
 }
 
 .main-nav a {
@@ -73,11 +73,24 @@ a {
 }
 
 .main-nav .active {
-  color: var(--ternary);
+  color: var(--darkClr);
 }
 .header {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+
+.darkModeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--extralightbg);
+  color: var(--darkClr);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 /*Mobile*/
@@ -100,12 +113,12 @@ a {
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: var(--ternary);
+    background-color: var(--lightbg);
     width: 100%;
   }
 
   .main-nav .active {
-    color: black;
+    color: var(--darkClr);
   }
 
   .main-nav a:hover {
@@ -119,13 +132,13 @@ a {
   .abdu-samaraie a b {
     padding-left: 5px !important;
     padding-right: 5px !important;
-    color: black;
+    color: var(--darkClr);
   }
   .main-nav {
     margin-right: 40px;
   }
   .main-nav a:hover {
-    color: black;
+    color: var(--darkClr);
   }
   .main-nav a {
     margin: 10px 10px;

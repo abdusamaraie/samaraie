@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "../styles/Header.css";
+import { NavLink } from "react-router-dom"
+import "../styles/Header.css"
+import darkMode from "../utils/dark-mode.js"
 
 const Logo = () => {
   return (
@@ -9,8 +9,24 @@ const Logo = () => {
         <b>Abdu Samaraie</b>
       </a>
     </h5>
-  );
-};
+  )
+}
+
+const DarkModeBtn = () => {
+  return (
+    <div className="dark-mode">
+      <div className="toggle-container">
+        <button
+          className="button darkModeBtn"
+          id="theme-toggle"
+          onClick={darkMode}
+        >
+          <span>☾</span>
+        </button>
+      </div>
+    </div>
+  )
+}
 
 function Header() {
   return (
@@ -27,9 +43,10 @@ function Header() {
         <NavLink to="resume" className="nav-link">
           Resume
         </NavLink>
+        <DarkModeBtn />
       </nav>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

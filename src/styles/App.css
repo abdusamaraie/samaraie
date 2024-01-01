@@ -22,14 +22,51 @@ canvas,
 svg {
   -webkit-user-drag: none;
 }
+
+.dark-mode {
+  /* Colors */
+  --color-darkgray: #959da5;
+
+  --color-black: #000;
+  --color-cornflowerblue: #669cff;
+  --color-darkslategray: #2f363d;
+  --black: #1b1f23;
+  --white: #fafafa;
+  --gray-01: #e1e4e8;
+  --gray-02: #959da5;
+  --gray-03: #586069;
+  --gray-04: #2f363d;
+  --gray-05: #1b1f23;
+  /* background and text */
+  --darkClr: #e1e4e8;
+  --lightClr: #fafafa;
+  --darkbg: #1b1f23;
+  --lightbg: #2f363d;
+  --extralightbg: #586069;
+  --extradarkbg: #070707;
+
+  --blue: #669cff;
+  --text: #333333;
+  --pink: #fd7373;
+  --yellow: #b9b13c;
+  --purple: rgb(148, 110, 221);
+  --cornellred: #f05354;
+  --facebookblue: #1778f2;
+  --green: #76ad44;
+  --orange: #ed9b30;
+  --alcaptain-color: #2aa4ef;
+}
+
 body {
   background-color: var(--lightbg);
   font-family: "SF-Display" !important;
   line-height: normal;
   overflow-x: hidden;
+  color: var(--darkClr);
 }
 p {
   margin: 20px 0;
+  color: var(--darkClr);
 }
 button {
   border: 0;
@@ -143,17 +180,18 @@ li {
 }
 
 :root {
+  /* fonts */
+  --font-sf-pro-display: "SF-Display";
+  --font-poppins: "Poppins";
+  /* font sizes */
+  --font-size-lg: 18px;
+
   /* ===============
 COLORS 
 =============== */
   --primary: #2aa4ef;
   --secondary: #e5e5e5;
   --ternary: #ffffff;
-  /* fonts */
-  --font-sf-pro-display: "SF Pro Display";
-  --font-poppins: "Poppins";
-  /* font sizes */
-  --font-size-lg: 18px;
 
   /* Colors */
   --color-darkgray: #959da5;
@@ -167,6 +205,12 @@ COLORS
   --gray-03: #586069;
   --gray-04: #2f363d;
   --gray-05: #1b1f23;
+  /* background and text */
+  --extralightbg: #f9f9f9;
+  --extradarkbg: #dfdfdf;
+  --darkClr: #1b1f23;
+
+  --lightClr: #fafafa;
   --darkbg: #f0f0f0;
   --lightbg: #fafafa;
 
@@ -192,6 +236,7 @@ COLORS
   --size-6: 0.625rem;
   --size-7: 0.5rem;
 }
+
 /*PINK*/
 .pink {
   color: var(--pink) !important;
@@ -259,6 +304,9 @@ COLORS
 /*DARK BG*/
 .darkbg {
   background-color: var(--darkbg) !important;
+}
+.lightbg {
+  background-color: var(--extralightbg) !important;
 }
 
 /* ===============

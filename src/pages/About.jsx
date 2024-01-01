@@ -15,7 +15,7 @@ const About = () => {
       {/* <! -- intro section --> */}
       <section className="intro">
         <div className="intro-grid ">
-          <div className="grid-content ">
+          <div className="grid-content lightbg ">
             <h3 className="h3">Intro 🙋🏻‍♂️</h3>
 
             <p>
