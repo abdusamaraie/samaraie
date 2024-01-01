@@ -30,7 +30,12 @@ const About = () => {
               system.
             </p>
           </div>
-          <img className="grid-image" src={abduImage} alt="Abdu Samaraie" />
+          <img
+            loading="lazy"
+            className="grid-image"
+            src={abduImage}
+            alt="Abdu Samaraie"
+          />
         </div>
       </section>
 
