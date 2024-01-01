@@ -1,6 +1,9 @@
 // create a project context to store project details, name, description, image, link, etc.
 
-import { createContext } from "react";
+import { createContext } from "react"
+import image1 from "../assets/images/Project1.png"
+import image2 from "../assets/images/Project2.png"
+import image3 from "../assets/images/Project3.png"
 
 // initiale state
 const initialState = {
@@ -19,7 +22,7 @@ const initialState = {
       paragraph_3_content:
         "Adhering to best practices, I applied essential Software Engineering concepts throughout the development process. Embracing Agile Development methodologies, we maintained an adaptive and iterative approach, fostering rapid and responsive project evolution. Version Control played a crucial role, ensuring seamless collaboration and project integrity. Rigorous Unit Testing was employed to guarantee the reliability and functionality of our application, reflecting a commitment to delivering a high-quality product. This experience not only sharpened my technical skills but also honed my ability to translate conceptual ideas into tangible, user-friendly solutions. Through this project, I demonstrated a holistic grasp of software development, combining technical acumen with a user-centered approach.",
 
-      image: require("../assets/images/Project1.png"),
+      image: image1,
       overlyStyle: "cacher-overlay",
       link: "/projects/1",
     },
@@ -27,7 +30,7 @@ const initialState = {
       id: 2,
       name: "AlCaptain",
       describtion: "Fitness App Marketplace",
-      image: require("../assets/images/Project2.png"),
+      image: image2,
       overlyStyle: "alcaptain-overlay",
       link: "/projects/2",
     },
@@ -35,13 +38,13 @@ const initialState = {
       id: 3,
       name: "InstaCart",
       describtion: "Data Science Project, Instacart Market Basket Analysis",
-      image: require("../assets/images/Project3.png"),
+      image: image3,
       overlyStyle: "instacart-overlay",
       link: "/projects/3",
     },
   ],
-};
+}
 
 // create project context
 
-export const ProjectContext = createContext(initialState);
+export const ProjectContext = createContext(initialState)

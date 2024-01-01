@@ -1,9 +1,8 @@
-import React from "react";
-import "../styles/Footer.css";
+import "../styles/Footer.css"
 
-const x = require("../assets/icons/X → twitter.png.png");
-const linkedin = require("../assets/icons/LinkedIn → linkedin.png.png");
-const instagram = require("../assets/icons/InstaLink → instagramlogo.png.png");
+import x from "../assets/icons/X → twitter.png.png"
+import linkedin from "../assets/icons/LinkedIn → linkedin.png.png"
+import instagram from "../assets/icons/InstaLink → instagramlogo.png.png"
 
 const Footer = () => {
   return (
@@ -40,7 +39,7 @@ const Footer = () => {
         <span id="blueStar">★</span>
       </h6>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

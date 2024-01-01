@@ -1,5 +1,6 @@
-import React from "react";
-import "../styles/About.css";
+import React from "react"
+import "../styles/About.css"
+import abduImage from "../assets/images/abdu.jpeg"
 
 const About = () => {
   return (
@@ -29,11 +30,7 @@ const About = () => {
               system.
             </p>
           </div>
-          <img
-            className="grid-image"
-            src={require("../assets/images/abdu.jpeg")}
-            alt="Abdu Samaraie"
-          />
+          <img className="grid-image" src={abduImage} alt="Abdu Samaraie" />
         </div>
       </section>
 
@@ -103,7 +100,7 @@ const About = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

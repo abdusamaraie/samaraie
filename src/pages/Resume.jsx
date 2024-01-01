@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
-import "../styles/Resume.css";
+import { useState, useEffect } from "react"
+import { Document, Page, pdfjs } from "react-pdf"
+import "../styles/Resume.css"
 // import path from "node:path";
 // import fs from "node:fs";
 
-import resume_pdf from "./data_science_resume_usa.pdf";
+import resume_pdf from "./data_science_resume_usa.pdf"
 
 // const pdfjsDistPath = path.dirname(require.resolve("pdfjs-dist/package.json"));
 // const pdfWorkerPath = path.join(pdfjsDistPath, "build", "pdf.worker.js");
@@ -14,26 +14,26 @@ import resume_pdf from "./data_science_resume_usa.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
   import.meta.url
-).toString();
+).toString()
 
 const Resume = () => {
-  const [numPages, setNumPages] = useState(1);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [numPages, setNumPages] = useState(1)
+  const [pageNumber, setPageNumber] = useState(1)
   function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
+    setNumPages(numPages)
   }
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+      setWindowWidth(window.innerWidth)
+    }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize)
 
     // Cleanup function to remove the event listener
-    return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
+    return () => window.removeEventListener("resize", handleResize)
+  }, []) // Empty dependency array means this effect runs once on mount and cleanup on unmount
 
   return (
     <div className="resume-container">
@@ -61,7 +61,7 @@ const Resume = () => {
         </a>
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Resume;
+export default Resume

@@ -1,4 +1,3 @@
-
 /* ===============
 GLOBAL 
 =============== */
@@ -12,15 +11,19 @@ GLOBAL
   padding: 0;
 }
 html {
-  animation: 1.0s ease-in fade-in;
-  scroll-behavior: smooth; 
+  animation: 1s ease-in fade-in;
+  scroll-behavior: smooth;
 }
-img,picture,video,canvas,svg {
+img,
+picture,
+video,
+canvas,
+svg {
   -webkit-user-drag: none;
 }
 body {
   background-color: var(--lightbg);
-  font-family: 'SF-Display' !important;
+  font-family: "SF-Display" !important;
   line-height: normal;
   overflow-x: hidden;
 }
@@ -34,52 +37,149 @@ button {
   color: inherit;
   background: var(--primary);
   cursor: pointer;
-
 }
 
-
-
 /* Styles */
+/* ===============
+FONTS 
+=============== */
+@font-face {
+  font-family: "SF-Display";
+  src: url("../assets/fonts/SF-Pro-Display-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SF-Display";
+  src: url("../assets/fonts/SF-Pro-Display-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF-Display";
+  src: url("../assets/fonts/SF-Pro-Display-Regular.ttf");
+  font-weight: normal;
+}
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/*Font Changes*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h5 {
+  text-transform: uppercase;
+  margin-top: 1vh !important;
+}
+h4 {
+  margin-top: 1vh !important;
+}
+p,
+li {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  line-height: 1.5;
+}
+@media screen and (min-width: 450px) {
+  h1 {
+    font-size: calc(36px + 36 * ((100vw - 320px) / 680));
+  }
+  h2 {
+    font-size: calc(30px + 30 * ((100vw - 320px) / (680)));
+  }
+  h3 {
+    font-size: calc(18px + 18 * ((100vw - 320px) / (680)));
+  }
+  h4 {
+    font-size: calc(18px + 6 * ((100vw - 320px) / (680)));
+  }
+  h5 {
+    font-size: calc(16px + 4 * ((100vw - 320px) / (680)));
+  }
+  h6 {
+    font-size: calc(16px + 2 * ((100vw - 320px) / (680)));
+  }
+  p,
+  li {
+    font-size: calc(14px + 6 * ((100vw - 320px) / (680)));
+  }
+  .caption {
+    font-size: calc(12px + 6 * ((100vw - 320px) / (680)));
+  }
+}
+
+/*Font Sizes*/
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 30px;
+    margin: 0;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 22px;
+  }
+  p,
+  li {
+    font-size: 18px;
+  }
+  .caption {
+    font-size: 16px !important;
+    opacity: 0.8;
+  }
+}
 
 :root {
-
   /* ===============
 COLORS 
 =============== */
   --primary: #2aa4ef;
   --secondary: #e5e5e5;
-  --ternary:#ffffff;
+  --ternary: #ffffff;
   /* fonts */
-  --font-sf-pro-display: 'SF Pro Display';
-  --font-poppins: 'Poppins';
+  --font-sf-pro-display: "SF Pro Display";
+  --font-poppins: "Poppins";
   /* font sizes */
   --font-size-lg: 18px;
-  
+
   /* Colors */
   --color-darkgray: #959da5;
   --color-black: #000;
   --color-cornflowerblue: #669cff;
---color-darkslategray: #2f363d;
-  --black: #1B1F23;
-  --white: #FAFAFA;
-  --gray-01: #E1E4E8;
-  --gray-02: #959DA5;
+  --color-darkslategray: #2f363d;
+  --black: #1b1f23;
+  --white: #fafafa;
+  --gray-01: #e1e4e8;
+  --gray-02: #959da5;
   --gray-03: #586069;
-  --gray-04: #2F363D;
-  --gray-05: #1B1F23;
-  --darkbg: #F0F0F0;
-  --lightbg: #FAFAFA;
+  --gray-04: #2f363d;
+  --gray-05: #1b1f23;
+  --darkbg: #f0f0f0;
+  --lightbg: #fafafa;
 
-  --blue: #669CFF;
+  --blue: #669cff;
   --text: #333333;
-  --pink: #FD7373;
-  --yellow: #B9B13C;
+  --pink: #fd7373;
+  --yellow: #b9b13c;
   --purple: rgb(148, 110, 221);
   --cornellred: #f05354;
   --facebookblue: #1778f2;
   --green: #76ad44;
-  --orange: #ED9B30;
+  --orange: #ed9b30;
   --alcaptain-color: #2aa4ef;
 
   /* ===============
@@ -92,7 +192,6 @@ COLORS
   --size-5: 0.75rem;
   --size-6: 0.625rem;
   --size-7: 0.5rem;
-  
 }
 /*PINK*/
 .pink {
@@ -163,105 +262,6 @@ COLORS
   background-color: var(--darkbg) !important;
 }
 
-
-/* ===============
-FONTS 
-=============== */
-@font-face {
-  font-family: 'SF-Display';
-  src: url('../assets/fonts/SF-Pro-Display-Bold.ttf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: 'SF-Display';
-  src: url('../assets/fonts/SF-Pro-Display-Medium.ttf');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'SF-Display';
-  src: url('../assets/fonts/SF-Pro-Display-Regular.ttf');
-  font-weight: normal;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-/*Font Changes*/
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-h5 {
-  text-transform: uppercase;
-  margin-top: 1vh !important;
-
-}
-h4 {
-  margin-top: 1vh !important;
-}
-p, li {
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  line-height: 1.5;
-}
-@media screen and (min-width: 450px) {
-  h1 {
-      font-size: calc(36px + 36* ((100vw - 320px) / 680));
-  }
-  h2 {
-      font-size: calc(30px + 30 * ((100vw - 320px) / (680)));
-  }
-  h3 {
-      font-size: calc(18px + 18 * ((100vw - 320px) / (680)));
-  }
-  h4 {
-      font-size: calc(18px + 6 * ((100vw - 320px) / (680)));
-  }
-  h5 {
-      font-size: calc(16px + 4 * ((100vw - 320px) / (680)));
-  }
-  h6 {
-      font-size: calc(16px + 2 * ((100vw - 320px) / (680)));
-  }
-  p, li {
-      font-size: calc(14px + 6 * ((100vw - 320px) / (680)));
-  }
-  .caption {
-      font-size: calc(12px + 6 * ((100vw - 320px) / (680)));
-  }
-}
-
-/*Font Sizes*/
-@media screen and (min-width: 1000px) {
-  h1 {
-      font-size: 72px;
-  }
-  h2 {
-      font-size: 60px;
-  }
-  h3 {
-      font-size: 36px;
-  }
-  h4 {
-      font-size: 30px;
-      margin: 0;
-  }
-  h5 {
-      font-size: 18px;
-  }
-  h6 {
-      font-size: 22px;
-  }
-  p, li {
-      font-size: 18px;
-  }
-  .caption {
-      font-size: 16px !important;
-      opacity: .8;
-  }
-}
-
-
-
-
 /* ===============
 APP
 =============== */
@@ -291,10 +291,9 @@ APP
   align-items: center;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
-
 }
 
-.App-footer{
+.App-footer {
   background-color: var(--secondary);
   max-height: 30vh;
   display: flex;
@@ -305,9 +304,9 @@ APP
 
 .App-link {
   color: #013947;
- 
- margin: 14px ;
- text-decoration: none;
+
+  margin: 14px;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
@@ -319,26 +318,19 @@ APP
   }
 }
 
-
-
-
-
-
-
 /* navbar */
 header nav {
   display: flex;
   gap: 16px;
   justify-content: flex-end;
   max-width: 1200px;
-  
 }
 header nav h1 {
   margin-right: auto;
   border-bottom: 3px solid var(--primary);
 }
 
-header nav a{
+header nav a {
   text-decoration: none;
   padding: 6px;
   border-radius: 4px;
@@ -349,19 +341,20 @@ header nav a.active {
 
 /* page content */
 main {
-margin-bottom: 40px;
-
+  margin-bottom: 40px;
 }
-
 
 /* contact form */
 form {
   margin-top: 30px;
 }
-form input, form label span, form textarea {
+form input,
+form label span,
+form textarea {
   display: block;
 }
-form input, form textarea {
+form input,
+form textarea {
   margin-bottom: 30px;
   padding: 8px;
   border-radius: 4px;
@@ -373,14 +366,6 @@ form label span {
   margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
 /* ===============
 GRID 
 =============== */
@@ -388,7 +373,7 @@ GRID
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1em;
-  
+
   justify-content: center;
 }
 .thegrid {
@@ -398,14 +383,14 @@ GRID
 .content-grid {
   width: 90%;
   margin: 0 auto;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 .flex-grid {
   width: 90%;
   margin: 0 auto;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 .flex-image {
   width: 50%;
@@ -413,35 +398,36 @@ GRID
   text-align: center;
 }
 
-.flex-image img{
-  width: 80%; 
-  margin: 0 auto; 
+.flex-image img {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*Desktop*/
 @media screen and (min-width: 768px) {
-  .thegrid, .flex-grid {
-      width: 80%;
-      margin-top: 2em;
-      margin-bottom: 2em;
+  .thegrid,
+  .flex-grid {
+    width: 80%;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
   .content-grid {
-      width: 60%;
-      padding-top: 2em;
-      padding-bottom: 2em;
+    width: 60%;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   .first-below-line {
-      padding-top: 0 !important;
+    padding-top: 0 !important;
   }
   .flex-grid {
-      justify-content:center;
+    justify-content: center;
   }
   .flex-grid {
-      padding-top: 2em;
-      padding-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
   .flex-image img {
-      width: 80%;
+    width: 80%;
   }
 }
 .c12 {
@@ -464,14 +450,14 @@ GRID
 /*Desktop*/
 @media screen and (min-width: 768px) {
   .flex {
-      display: flex;
+    display: flex;
   }
 }
 
 /* ===============
 CONTAINER
 =============== */
-.container{
+.container {
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
@@ -481,37 +467,37 @@ CONTAINER
 /* 2xl */
 @media (min-width: 1536px) {
   .container {
-      max-width: 1536px;
+    max-width: 1536px;
   }
 }
 /* xl */
 @media (min-width: 1280px) {
   .container {
-      max-width: 1280px;
+    max-width: 1280px;
   }
 }
 /* lg */
 @media (min-width: 1024px) {
   .container {
-      max-width: 1024px;
+    max-width: 1024px;
   }
 }
 /* md */
 @media (min-width: 768px) {
   .container {
-      max-width: 768px;
+    max-width: 768px;
   }
 }
 /* sm */
 @media (min-width: 640px) {
   .container {
-      max-width: 640px;
+    max-width: 640px;
   }
 }
 /* xs */
 @media (min-width: 375px) {
   .container {
-      width:100%;
+    width: 100%;
   }
 }
 
@@ -522,7 +508,7 @@ DESIGNS
   box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.2);
 }
 .image {
-  width: 80%; 
+  width: 80%;
   margin: 0 auto;
   margin-left: 10%;
   margin-top: 2vh;
@@ -558,7 +544,7 @@ DESIGNS
   margin-bottom: 2vh;
 }
 .hr {
-  border-bottom: 1px solid var(--gray-01) !important; 
+  border-bottom: 1px solid var(--gray-01) !important;
   width: 90%;
   margin: 0 auto;
   margin-top: 2vh;
@@ -575,8 +561,8 @@ DESIGNS
 /*Mobile*/
 @media screen and (max-width: 768px) {
   .image {
-      width: 90%; 
-      margin-left: 5%;
+    width: 90%;
+    margin-left: 5%;
   }
 }
 .link {
@@ -587,34 +573,34 @@ DESIGNS
 /*Desktop*/
 @media screen and (min-width: 768px) {
   .link {
-      transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .link:before,
   .link:after {
-      content: "";
-      position: absolute;
-      bottom: -4px;
-      width: 0px;
-      height: 2px;
-      margin: 5px 0 0;
-      transition:  all 0.2s ease-in-out;
-      transition-duration: 0.5s;
-      opacity: 0;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.5s;
+    opacity: 0;
   }
   .link:before {
-      left: 50%;
+    left: 50%;
   }
   .link:after {
-      right: 50%;
+    right: 50%;
   }
   .link:hover {
-      cursor: pointer;
-      opacity: .8;
+    cursor: pointer;
+    opacity: 0.8;
   }
   .link:hover:before,
   .link:hover:after {
-      width: 50%;
-      opacity: 1;
+    width: 50%;
+    opacity: 1;
   }
 }
 
@@ -625,13 +611,13 @@ DESIGNS
 /* ===============
 SCROLL TO TOP 
 =============== */
-.scroll-to-top  {
+.scroll-to-top {
   position: fixed;
   bottom: 11%;
   right: 4em;
   z-index: 99;
   width: 1.5em;
-  height:1.5em;
+  height: 1.5em;
   cursor: pointer;
   outline: none !important;
   background: url(../assets/icons/up.svg) center / contain no-repeat;
@@ -649,7 +635,7 @@ SCROLL TO TOP
 /*mobile*/
 @media screen and (max-width: 768px) {
   .scroll-to-top {
-      display: none;
+    display: none;
   }
 }
 
@@ -667,18 +653,34 @@ PROGRESS BAR
 /*mobile*/
 @media screen and (max-width: 768px) {
   #_progress {
-      height: 3px;
+    height: 3px;
   }
 }
 .progress-pink {
-  background: linear-gradient(to right, var(--pink) var(--scroll),transparent 0);
+  background: linear-gradient(
+    to right,
+    var(--pink) var(--scroll),
+    transparent 0
+  );
 }
 .progress-green {
-  background: linear-gradient(to right, var(--green) var(--scroll),transparent 0);
+  background: linear-gradient(
+    to right,
+    var(--green) var(--scroll),
+    transparent 0
+  );
 }
 .progress-yellow {
-  background: linear-gradient(to right, var(--yellow) var(--scroll),transparent 0);
+  background: linear-gradient(
+    to right,
+    var(--yellow) var(--scroll),
+    transparent 0
+  );
 }
 .progress-blue {
-  background: linear-gradient(to right, var(--facebookblue) var(--scroll),transparent 0);
+  background: linear-gradient(
+    to right,
+    var(--facebookblue) var(--scroll),
+    transparent 0
+  );
 }

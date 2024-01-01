@@ -1,17 +1,18 @@
-import "./styles/App.css";
-import { RootLayout } from "./layouts";
-import { About, Home, Project } from "./pages";
-import React from "react"; // create react navigation mechanism using react-router-dom
+import React from "react"
+import "./styles/App.css"
+import { RootLayout } from "./layouts"
+import { About, Home, Project } from "./pages"
+// create react navigation mechanism using react-router-dom
 import {
   createBrowserRouter,
   Route,
   createRoutesFromElements,
   RouterProvider,
-} from "react-router-dom";
+} from "react-router-dom"
 
-const LazyResume = React.lazy(() => import("./pages/Resume"));
+const LazyResume = React.lazy(() => import("./pages/Resume"))
 
-// Create browser router  navigation
+// Create browser router navigation
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
@@ -31,14 +32,14 @@ const router = createBrowserRouter(
       />
     </Route>
   )
-);
+)
 
 function App() {
   return (
     <RouterProvider router={router}>
       <div className="App"></div>
     </RouterProvider>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,9 +1,9 @@
-import React from "react";
-import { Hero, ProjectsGrid } from "../components";
+import React from "react"
+import { Hero, ProjectsGrid } from "../components"
 
 const Title = () => {
-  return <h1 className="hero_title">Hi, I’m Abdu! 👋</h1>;
-};
+  return <h1 className="hero_title">Hi, I’m Abdu! 👋</h1>
+}
 
 const Subtitle = () => {
   return (
@@ -18,8 +18,8 @@ const Subtitle = () => {
         </span>
       </span>
     </h2>
-  );
-};
+  )
+}
 
 const Home = () => {
   return (
@@ -27,7 +27,7 @@ const Home = () => {
       <Hero Title={Title} Subtitle={Subtitle} />
       <ProjectsGrid />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
