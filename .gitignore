@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ignore firebase files
+firebase.json
+.firebaserc
+.firebase
+
+# ignore build files
+build
