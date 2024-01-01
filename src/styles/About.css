@@ -32,9 +32,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .grid-content p {
-  font-size: var(--size-2);
+  font-size: var(--size-1);
   line-height: 1.5;
-  color: var(--gray-01);
+  color: var(--gray-04);
   margin-bottom: 1rem;
 }
 .grid-image {
