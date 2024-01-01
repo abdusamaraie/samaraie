@@ -1,12 +1,4 @@
-# React + Vite
-
-This project was built using React + Vite + firebase
-
-to run the dev environment
-
-# write a readme instructions to run the dev environment and build
-
-# React + Vite
+# React + Vite + Firebase
 
 This project was built using React + Vite + Firebase.
 
