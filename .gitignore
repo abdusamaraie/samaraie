@@ -23,8 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
-
 # ignore firebase files
 firebase.json
 .firebaserc
 .firebase
+
+# ignore build folder
+build
