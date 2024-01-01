@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 /* ===============
 GLOBAL 
 =============== */
@@ -58,8 +59,6 @@ FONTS
   src: url("../assets/fonts/SF-Pro-Display-Regular.ttf");
   font-weight: normal;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 /*Font Changes*/
 h1,
