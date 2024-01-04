@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import "../styles/Header.css"
-import darkMode from "../utils/dark-mode.js"
+import { useTheme } from "../contexts/"
+import { ThemeBtn } from "../components"
 
 const Logo = () => {
   return (
@@ -12,23 +13,8 @@ const Logo = () => {
   )
 }
 
-const DarkModeBtn = () => {
-  return (
-    <div className="dark-mode">
-      <div className="toggle-container">
-        <button
-          className="button darkModeBtn"
-          id="theme-toggle"
-          onClick={darkMode}
-        >
-          <span>☾</span>
-        </button>
-      </div>
-    </div>
-  )
-}
-
 function Header() {
+  const { toggleTheme } = useTheme()
   return (
     <header className="header">
       <Logo />
@@ -43,7 +29,8 @@ function Header() {
         <NavLink to="resume" className="nav-link">
           Resume
         </NavLink>
-        <DarkModeBtn />
+        {/* <DarkModeBtn /> */}
+        <ThemeBtn onToggle={toggleTheme} />
       </nav>
     </header>
   )

@@ -7,18 +7,19 @@
   padding: 40px;
   gap: 1rem;
   margin-bottom: 40px;
-  background-image: url("../assets/images/hero_bg.png");
+  background-color: var(--foreground-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 100vh;
   position: relative;
+  height: 100%;
 }
 .HeroImage {
   display: inline;
   border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
+  width: 10rem;
+  height: 10rem;
   margin: 0 auto;
   border: 3px solid var(--primary);
   size: cover;
@@ -26,15 +27,16 @@
 .Hero .hero_title {
   text-align: center;
   z-index: 99;
-  color: var(--color-black);
+  color: var(--h1-color);
+  transition: all 0.1s ease-in-out;
 }
 .Hero h2 {
-  margin: 0 auto;
-  border-bottom: 3px solid var(--primary);
   font-weight: 400;
   text-align: center;
+  margin: 0 auto;
   font-size: 2em;
-  color: var(--color-darkslategray);
+  color: var(--secondary-text-color);
+  transition: all 0.1s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -93,7 +95,7 @@
   z-index: -1;
 }
 .buffalolineswipe {
-  color: var(--facebookblue);
+  color: var(--cornellred);
 }
 .buffalolineswipe::before {
   background: rgba(23, 120, 242, 0.25);

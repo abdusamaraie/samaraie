@@ -101,8 +101,6 @@ FOOTER
   margin-top: 5vh;
   padding-top: 2vh;
   padding-bottom: 5vh;
-
-  width: 100% auto;
 }
 .social {
   margin: 0 auto;
@@ -132,7 +130,7 @@ FOOTER
   text-align: center;
   margin-top: 20px;
   font-size: 13px;
-  color: var(--gray-04);
+  color: var(--primary-text-color);
 }
 @media screen and (min-width: 768px) {
   .name {

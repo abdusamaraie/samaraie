@@ -23,10 +23,10 @@ const Subtitle = () => {
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero Title={Title} Subtitle={Subtitle} />
       <ProjectsGrid />
-    </div>
+    </>
   )
 }
 

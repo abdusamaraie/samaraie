@@ -23,40 +23,6 @@ svg {
   -webkit-user-drag: none;
 }
 
-.dark-mode {
-  /* Colors */
-  --color-darkgray: #959da5;
-
-  --color-black: #000;
-  --color-cornflowerblue: #669cff;
-  --color-darkslategray: #2f363d;
-  --black: #1b1f23;
-  --white: #fafafa;
-  --gray-01: #e1e4e8;
-  --gray-02: #959da5;
-  --gray-03: #586069;
-  --gray-04: #2f363d;
-  --gray-05: #1b1f23;
-  /* background and text */
-  --darkClr: #e1e4e8;
-  --lightClr: #fafafa;
-  --darkbg: #1b1f23;
-  --lightbg: #2f363d;
-  --extralightbg: #586069;
-  --extradarkbg: #070707;
-
-  --blue: #669cff;
-  --text: #333333;
-  --pink: #fd7373;
-  --yellow: #b9b13c;
-  --purple: rgb(148, 110, 221);
-  --cornellred: #f05354;
-  --facebookblue: #1778f2;
-  --green: #76ad44;
-  --orange: #ed9b30;
-  --alcaptain-color: #2aa4ef;
-}
-
 body {
   background-color: var(--lightbg);
   font-family: "SF-Display" !important;
@@ -66,7 +32,6 @@ body {
 }
 p {
   margin: 20px 0;
-  color: var(--darkClr);
 }
 button {
   border: 0;
@@ -76,7 +41,16 @@ button {
   background: var(--primary);
   cursor: pointer;
 }
-
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  visibility: hidden;
+  display: none;
+}
 /* Styles */
 /* ===============
 FONTS 
@@ -179,6 +153,29 @@ li {
   }
 }
 
+/* ===============
+THEME
+=============== */
+.dark,
+[data-theme="dark"] {
+  /* background and text */
+  --background-color: var(--gray-04);
+  --forground-color: var(--color-cornflowerblue);
+  --primary-text-color: var(--gray-01);
+  --secondary-text-color: var(--gray-01);
+  --text-color: var(--white);
+  --toggle-bg-color: var(--white);
+  --toggle-fg-color: var(--color-cornflowerblue);
+
+  --darkClr: var(--gray-02);
+  --lightClr: var(--gray-01);
+  --darkbg: var(--gray-04);
+  --lightbg: var(--gray-03);
+  --h1-color: var(--color-darkgray);
+  --extralightbg: var(--color-white);
+  --extradarkbg: var(--color-black);
+}
+
 :root {
   /* fonts */
   --font-sf-pro-display: "SF-Display";
@@ -193,29 +190,20 @@ COLORS
   --secondary: #e5e5e5;
   --ternary: #ffffff;
 
-  /* Colors */
+  /* base Colors */
   --color-darkgray: #959da5;
   --color-black: #000;
   --color-cornflowerblue: #669cff;
   --color-darkslategray: #2f363d;
   --black: #1b1f23;
   --white: #fafafa;
-  --gray-01: #e1e4e8;
-  --gray-02: #959da5;
-  --gray-03: #586069;
-  --gray-04: #2f363d;
-  --gray-05: #1b1f23;
-  /* background and text */
-  --extralightbg: #f9f9f9;
-  --extradarkbg: #dfdfdf;
-  --darkClr: #1b1f23;
-
-  --lightClr: #fafafa;
-  --darkbg: #f0f0f0;
-  --lightbg: #fafafa;
-
+  --gray-01: #aaaaaa;
+  --gray-02: #3c3f43;
+  --gray-03: #3d3d3d;
+  --gray-04: #212121;
+  --gray-05: #181818;
   --blue: #669cff;
-  --text: #333333;
+  --text: #fff;
   --pink: #fd7373;
   --yellow: #b9b13c;
   --purple: rgb(148, 110, 221);
@@ -224,6 +212,20 @@ COLORS
   --green: #76ad44;
   --orange: #ed9b30;
   --alcaptain-color: #2aa4ef;
+  /* background and text */
+  --background-color: var(--white);
+  --forground-color: var(--color-cornflowerblue);
+  --primary-text-color: var(--color-cornflowerblue);
+  --secondary-text-color: var(--gray-02);
+  --text-color: var(--black);
+  --h1-color: var(--color-darkslategray);
+  --extralightbg: #f9f9f9;
+  --extradarkbg: var(--gray-05);
+  --darkClr: #1b1f23;
+  --lightClr: #fafafa;
+  --darkbg: var(--gray-04);
+  --lightbg: var(--white);
+  --toggle-bg-color: var(--gray-05);
 
   /* ===============
   SIZES
@@ -312,7 +314,9 @@ COLORS
 /* ===============
 APP
 =============== */
-
+.dark {
+  background-color: var(--black);
+}
 .App {
   text-align: center;
 }

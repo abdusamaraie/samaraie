@@ -9,7 +9,7 @@ const Project = () => {
   const { projects } = useContext(ProjectContext)
   const project = projects[projectId - 1]
   return (
-    <div>
+    <>
       <div className="project_hero">
         <h1>{project.name}</h1>
         <p>{project.describtion}</p>
@@ -48,7 +48,7 @@ const Project = () => {
         <h3>{project.paragraph_3_title}</h3>
         <p>{project.paragraph_3_content}</p>
       </section>
-    </div>
+    </>
   )
 }
 

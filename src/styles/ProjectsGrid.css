@@ -1,136 +1,144 @@
 #myProjects {
-
   margin-top: 45px !important;
-    text-align: center !important;
-    border-bottom: 1px solid var(--gray-01) !important;
-    width: 83%;
-    margin-bottom: 44px !important;
-    line-height: .1em !important;
-    margin-left: 9% !important;
+  text-align: center !important;
+  border-bottom: 1px solid var(--gray-01) !important;
+  width: 83%;
+  margin-bottom: 44px !important;
+  line-height: 0.1em !important;
+  margin-left: 9% !important;
 }
 #myProjects span {
-    background: var(--lightbg);
-    padding: 0 12px !important;
+  background: var(--background-color) !important;
+  padding: 0 12px !important;
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-.project-card{
-    margin: 0 auto;
-}
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 .project-card {
-    position: relative;
+  margin: 0 auto;
+}
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0;
+}
+.project-card {
+  position: relative;
 }
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease-in-out;
-    border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
 }
-
 
 .alcaptain-overlay {
-    background-color: rgba(23, 120, 242, 0.65); /*Facebook Watch background img color w/ .65 opacity*/  
+  background-color: rgba(
+    23,
+    120,
+    242,
+    0.65
+  ); /*Facebook Watch background img color w/ .65 opacity*/
 }
 
-
 .instacart-overlay {
-    background-color: rgba(218, 159, 93, 0.75); /*Instagram background img color w/ .65 opacity*/
+  background-color: rgba(
+    218,
+    159,
+    93,
+    0.75
+  ); /*Instagram background img color w/ .65 opacity*/
 }
 
 .cacher-overlay {
-    background-color: rgba(52, 174, 227, 0.7); /*CU Reviews background img color w/ .65 opacity*/
+  background-color: rgba(
+    52,
+    174,
+    227,
+    0.7
+  ); /*CU Reviews background img color w/ .65 opacity*/
 }
 
 .overlay h3 {
-    color: white;
-    position: absolute;
-    text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
-    top: 50%;
-    left: 51.5%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  color: white;
+  position: absolute;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 51.5%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 /*Only hover on DESKTOP*/
 @media screen and (min-width: 700px) {
-    .project-card:hover .overlay {
-        opacity: 1;
-        transition: .3s ease-in-out;
-    }
-    .project-card:hover {
-        transition: .3s ease-in-out;
-        transform: scale(1.03);
-    }
-    .project-card:hover .overlay h3{
-        animation: slide-up .35s ease-out;
-    }
-    .mobile-no-hover {
-        display: none !important;
-    }
-    .project-card img {
-        box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.3);
-    }
+  .project-card:hover .overlay {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+  .project-card:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.03);
+  }
+  .project-card:hover .overlay h3 {
+    animation: slide-up 0.35s ease-out;
+  }
+  .mobile-no-hover {
+    display: none !important;
+  }
+  .project-card img {
+    box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.3);
+  }
 }
 
 .mobile-no-hover {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 2vh;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2vh;
 }
 
 .overlay img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 5px;
 }
 
 /*Mobile*/
 @media screen and (min-width: 375px) {
-    .project-card {
-        width: 85%;
-    }
+  .project-card {
+    width: 85%;
+  }
 }
 /*Midway*/
 @media screen and (min-width: 700px) {
-    .project-card {
-        width: 41%;
-
-    }    
+  .project-card {
+    width: 41%;
+  }
 }
 /*Desktop*/
 @media screen and (min-width: 1300px) {
-    .project-card {
-        width: 45%;
-
-    }
-    .grid {
-        margin-left: 2%;
-        margin-right: 2%;
-    }
+  .project-card {
+    width: 45%;
+  }
+  .grid {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
-
-

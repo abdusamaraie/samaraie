@@ -1,11 +1,11 @@
-import React from "react";
-import "../styles/ProjectsGrid.css";
-import ProjectCard from "./ProjectCard";
-import { useContext } from "react";
-import { ProjectContext } from "../contexts/ProjectContext";
+import React from "react"
+import "../styles/ProjectsGrid.css"
+import ProjectCard from "./ProjectCard"
+import { useContext } from "react"
+import { ProjectContext } from "../contexts/ProjectContext"
 
 const ProjectsGrid = () => {
-  const { projects } = useContext(ProjectContext);
+  const { projects } = useContext(ProjectContext)
   return (
     <div className="projects">
       <h4 id="myProjects">
@@ -26,7 +26,7 @@ const ProjectsGrid = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectsGrid;
+export default ProjectsGrid

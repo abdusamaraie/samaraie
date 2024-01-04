@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "./styles/App.css"
 import { RootLayout } from "./layouts"
 import { About, Home, Project } from "./pages"
@@ -37,7 +37,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <RouterProvider router={router}>
-      <div className="App"></div>
+      <div className="App" />
     </RouterProvider>
   )
 }
