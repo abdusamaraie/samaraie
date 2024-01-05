@@ -4,7 +4,7 @@ import "../styles/Resume.css"
 // import path from "node:path";
 // import fs from "node:fs";
 
-import resume_pdf from "./data_science_resume_usa.pdf"
+import resume_pdf from "/data_science_resume_usa.pdf"
 
 // const pdfjsDistPath = path.dirname(require.resolve("pdfjs-dist/package.json"));
 // const pdfWorkerPath = path.join(pdfjsDistPath, "build", "pdf.worker.js");
