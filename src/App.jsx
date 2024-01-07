@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react"
 import "./styles/App.css"
+import React, { useEffect, useState } from "react"
+
 import { RootLayout } from "./layouts"
 import { About, Home, Project } from "./pages"
 import DSA from "./pages/DSA"

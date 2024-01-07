@@ -18,7 +18,7 @@ const About = () => {
           <div className="grid-content lightbg ">
             <h3 className="h3">Intro 🙋🏻‍♂️</h3>
 
-            <p>
+            <p className="text-3xl">
               In 2019, I earned my degree in Computer Science from UB, setting
               the foundation for my tech journey. Following an internship on the
               backend team at OLE that summer, I embarked on a master's in Data

@@ -10,7 +10,7 @@ const Footer = () => {
       <h4 className="line blueline">
         <a href="mailto:abdu@samaraie.com"> 👋 Let's Get In Touch!</a>
       </h4>
-      <div className="social">
+      <div className="social flex justify-center">
         <a
           href="https://www.linkedin.com/in/abdu-samaraie/"
           target="_blank"

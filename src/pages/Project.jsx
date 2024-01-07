@@ -17,9 +17,9 @@ const Project = () => {
       <div className="thegrid gird">
         {/* <!-------------------Overview-------------------> */}
         <div className="flexContainer">
-          <div className="flexText">
+          <div className="flexText [&>*]:text-slate-400">
             <h5 className="blue">Vision</h5>
-            <p>
+            <p className="">
               Our vision is to provide the best peer-to-peer chatting experience
               for the Buffalo students.
             </p>
@@ -40,7 +40,7 @@ const Project = () => {
         </div>
       </div>
 
-      <section className="project_section">
+      <section className="container project_section">
         <h3>{project.paragraph_1_title}</h3>
         <p>{project.paragraph_1_content}</p>
         <h3>{project.paragraph_2_title}</h3>
