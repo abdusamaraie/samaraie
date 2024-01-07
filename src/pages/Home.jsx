@@ -41,6 +41,7 @@ const Subtitle = () => {
       animate={{ translateY: 0 }}
       transition={{ duration: 1.4, ease: "backIn" }}
       exit={{ translateY: 0 }}
+      className="mb-12"
     >
       {" "}
       <h2 className="h2">
