@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import "./styles/App.css"
 import { RootLayout } from "./layouts"
 import { About, Home, Project } from "./pages"
+import DSA from "./pages/DSA"
 // create react navigation mechanism using react-router-dom
 import {
   createBrowserRouter,
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
+      <Route path="/DSA" element={<DSA />} />
     </Route>
   )
 )

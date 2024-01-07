@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom"
 import { Footer, Header } from "../components"
 import { useEffect, useState } from "react"
-import { ThemeProvider } from "../contexts"
+import { ThemeProvider, useTheme } from "../contexts"
 
 const RootLayout = () => {
-  //state of the theme in the app
+  //Main state of the theme in the app
   const [theme, setTheme] = useState("light")
 
   //state of the theme in the local storage
@@ -29,8 +29,13 @@ const RootLayout = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme)
+    console.log(theme)
     handleTheme()
   }, [theme])
+
+  // useEffect(() => {
+  //   console.log(theme)
+  // })
 
   return (
     <ThemeProvider value={{ theme, toggleTheme }}>

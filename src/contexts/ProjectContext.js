@@ -40,7 +40,7 @@ const initialState = {
       describtion: "Data Science Project, Instacart Market Basket Analysis",
       image: image3,
       overlyStyle: "instacart-overlay",
-      link: "/projects/3",
+      link: "/DSA",
     },
   ],
 }
