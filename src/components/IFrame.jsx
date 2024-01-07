@@ -76,6 +76,7 @@ const IFrame = ({ url }) => {
         }}
         title="static_html"
         src={url}
+        loading="lazy"
       />
     </div>
   )

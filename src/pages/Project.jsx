@@ -35,6 +35,7 @@ const Project = () => {
               className="shadow image"
               src={project.image}
               alt={project.name}
+              loading="lazy"
             />
           </div>
         </div>
