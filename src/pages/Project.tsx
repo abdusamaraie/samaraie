@@ -5,7 +5,7 @@ import "../styles/Project.css"
 
 const Project = () => {
   const params = useParams()
-  const projectId = params.projectId
+  const projectId: number = Number(params.projectId)
   const { projects } = useContext(ProjectContext)
   const project = projects[projectId - 1]
   return (
@@ -14,12 +14,12 @@ const Project = () => {
         <h1>{project.name}</h1>
         <p>{project.describtion}</p>
       </div>
-      <div className="thegrid gird">
+      <div className="container mt-8 lg:mt-10">
         {/* <!-------------------Overview-------------------> */}
-        <div className="flexContainer">
-          <div className="flexText [&>*]:text-slate-400">
+        <div className="grid md:grid-cols-2">
+          <div className="flex flex-col items-start [&>*]:text-slate-400">
             <h5 className="blue">Vision</h5>
-            <p className="">
+            <p className="text-wrap indent-px text-left">
               Our vision is to provide the best peer-to-peer chatting experience
               for the Buffalo students.
             </p>
@@ -30,9 +30,9 @@ const Project = () => {
             <h5 className="blue">Timeline</h5>
             <p>Spring 2018 - Fall 2019</p>
           </div>
-          <div className="flexImage-bigger">
+          <div className="flex justify-center mt-6">
             <img
-              className="shadow image"
+              className="shadow max-w-full h-auto align-middle border-none rounded-md"
               src={project.image}
               alt={project.name}
               loading="lazy"

@@ -1,12 +1,7 @@
-import React from "react"
 import { Hero, ProjectsGrid } from "../components"
 import { motion, useTime, useTransform } from "framer-motion"
 
 const Title = () => {
-  const time = useTime()
-  const rotate = useTransform(time, [0, 100, 0], [0, 10, 0], {
-    clamp: false,
-  })
   return (
     <motion.h1
       initial={{ x: 0, scale: 0 }}
@@ -37,8 +32,8 @@ const Title = () => {
 const Subtitle = () => {
   return (
     <motion.div
-      initial={{ translateY: 1000 }}
-      animate={{ translateY: 0 }}
+      initial={{ translateX: 1000 }}
+      animate={{ translateX: 0 }}
       transition={{ duration: 1.4, ease: "backIn" }}
       exit={{ translateY: 0 }}
       className="mb-12"

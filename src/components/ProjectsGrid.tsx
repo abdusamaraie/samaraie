@@ -1,4 +1,3 @@
-import React from "react"
 import "../styles/ProjectsGrid.css"
 import ProjectCard from "./ProjectCard"
 import { useContext } from "react"
@@ -14,7 +13,7 @@ const ProjectsGrid = () => {
 
       {/* Projects grid */}
 
-      <div className="grid">
+      <div className={"grid projectsGrid"}>
         {projects.map((project) => (
           <ProjectCard
             projectName={project.name}

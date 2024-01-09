@@ -1,4 +1,3 @@
-import React from "react"
 import "../styles/Hero.css"
 
 import { motion } from "framer-motion"
@@ -18,7 +17,7 @@ const HeroImage = () => {
   )
 }
 
-function Hero({ Title, Subtitle }) {
+function Hero({ Title, Subtitle }: { Title: React.FC; Subtitle: React.FC }) {
   return (
     <div className="Hero">
       <HeroImage />

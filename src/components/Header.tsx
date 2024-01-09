@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import "../styles/Header.css"
-import { useTheme } from "../contexts/"
-import { ThemeBtn } from "../components"
+import { useTheme } from "../contexts"
+import { ThemeBtn } from "."
 
 const Logo = () => {
   return (

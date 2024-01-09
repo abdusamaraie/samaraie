@@ -29,7 +29,7 @@ const RootLayout = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme)
-    console.log(theme)
+
     handleTheme()
   }, [theme])
 

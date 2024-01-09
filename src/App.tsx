@@ -1,15 +1,13 @@
 import "./styles/App.css"
-import React, { useEffect, useState } from "react"
-
+import React from "react"
 import { RootLayout } from "./layouts"
-import { About, Home, Project } from "./pages"
-import DSA from "./pages/DSA"
+import DSA, { About, Home, Project } from "./pages"
 // create react navigation mechanism using react-router-dom
 import {
   createBrowserRouter,
   Route,
   createRoutesFromElements,
-  RouterProvider,
+  RouterProvider, // Add this import
 } from "react-router-dom"
 
 const LazyResume = React.lazy(() => import("./pages/Resume"))
@@ -39,9 +37,9 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <RouterProvider router={router}>
-      <div className="App" />
-    </RouterProvider>
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   )
 }
 

@@ -19,7 +19,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const Resume = () => {
   const [numPages, setNumPages] = useState(1)
   const [pageNumber, setPageNumber] = useState(1)
-  function onDocumentLoadSuccess({ numPages }) {
+  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages)
   }
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -39,7 +39,7 @@ const Resume = () => {
     <div className="resume-container">
       <Document
         file={resume_pdf}
-        nLoadSuccess={onDocumentLoadSuccess}
+        onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={() => <p>Something wrong with the pdf</p>}
         className={"resume"}
       >

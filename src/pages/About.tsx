@@ -1,4 +1,3 @@
-import React from "react"
 import "../styles/About.css"
 import abduImage from "../assets/images/abdu.jpeg"
 
@@ -65,11 +64,11 @@ const About = () => {
 
       {/* <! -- skills section --> */}
       <section className="skills">
-        <h2 className="skills-header">Skills 🛠️</h2>
-        <div className="skills-container">
-          <div className="skills-list">
+        <h2 className="skills-header text-left mb-8">Skills 🛠️</h2>
+        <div className="skills-container grid grid-cols-1 lg:grid-cols-3 text-left">
+          <div className="skills-list ">
             <h3 className="skills-label">Languages</h3>
-            <ul className="skills-languages">
+            <ul className="skills-languages ">
               <li className="skills-info">HTML</li>
               <li className="skills-info">CSS</li>
               <li className="skills-info">JavaScript</li>
@@ -78,7 +77,7 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="skills-list">
+          <div className="skills-list ">
             <h3 className="skills-label">Libraries</h3>
             <ul className="skills-frameworks">
               <li>React</li>
@@ -90,7 +89,7 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="skills-list">
+          <div className="skills-list ">
             <h3 className="skills-label">Tools</h3>
             <ul className="skills-tools">
               <li>Git</li>
