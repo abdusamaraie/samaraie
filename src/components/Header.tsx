@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import "../styles/Header.css"
-import { useTheme } from "../contexts"
+
 import { ThemeBtn } from "."
 
 const Logo = () => {
@@ -14,7 +14,6 @@ const Logo = () => {
 }
 
 function Header() {
-  const { toggleTheme } = useTheme()
   return (
     <header className="header">
       <Logo />
@@ -30,7 +29,7 @@ function Header() {
           Resume
         </NavLink>
         {/* <DarkModeBtn /> */}
-        <ThemeBtn onToggle={toggleTheme} />
+        <ThemeBtn />
       </nav>
     </header>
   )

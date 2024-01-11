@@ -1,19 +1,16 @@
 import { createContext, useContext } from "react"
 
 export type ThemeContextType = {
-  theme: string
+  themeMode: string
   toggleTheme: () => void
 }
 
-const themeContextDefaultValues: ThemeContextType = {
-  theme: "",
-  toggleTheme: () => {},
-}
-export const ThemeContext = createContext(themeContextDefaultValues)
-
-export default function useTheme() {
-  return useContext(ThemeContext)
-}
-
+export const ThemeContext = createContext<ThemeContextType>(
+  {} as ThemeContextType
+)
 export const ThemeProvider: React.Provider<ThemeContextType> =
   ThemeContext.Provider
+
+export default function useTheme() {
+  return useContext<ThemeContextType>(ThemeContext)
+}

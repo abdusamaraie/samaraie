@@ -1,48 +1,34 @@
 import { Outlet } from "react-router-dom"
 import { Footer, Header } from "../components"
 import { useEffect, useState } from "react"
-import { ThemeProvider, useTheme } from "../contexts"
+import { ThemeProvider } from "../contexts"
 
 const RootLayout = () => {
+  // localstorage theme mode
+  const localThemeInitValue: Storage | string =
+    localStorage.getItem("theme") || "light"
+
   //Main state of the theme in the app
-  const [theme, setTheme] = useState("light")
+  const [themeMode, setTheme] = useState(localThemeInitValue)
 
-  //state of the theme in the local storage
-  const curTheme = localStorage.getItem("theme")
-  // on mount check if theme is set in local storage and set it
-  curTheme && document.body.classList.add(curTheme)
-
-  // handle the toggle for the theme and set it in local storage
-  const handleTheme = () => {
-    document.body.classList.toggle("dark")
-    if (document.body.classList.contains("dark")) {
+  useEffect(() => {
+    if (themeMode === "dark") {
+      document.body.classList.add("dark")
       localStorage.setItem("theme", "dark")
     } else {
-      localStorage.removeItem("theme")
-      document.body.removeAttribute("class")
+      document.body.classList.remove("dark")
+      localStorage.setItem("theme", "light")
     }
-  }
+  }, [themeMode])
 
   const toggleTheme = () => {
     setTheme((currTheme) => (currTheme === "light" ? "dark" : "light"))
   }
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme)
-
-    handleTheme()
-  }, [theme])
-
-  // useEffect(() => {
-  //   console.log(theme)
-  // })
-
   return (
-    <ThemeProvider value={{ theme, toggleTheme }}>
+    <ThemeProvider value={{ themeMode, toggleTheme }}>
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </ThemeProvider>
   )
